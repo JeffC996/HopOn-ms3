@@ -1,0 +1,19 @@
+{
+  "name": "ms3",
+  "version": "1.0.0",
+  "description": "This backend application is a simple CRUD API developed with Express.js and Firebase. It demonstrates updating inventory data based on item type, category, and brand through a RESTful API.   The API is documented using Swagger for easy testing and interaction.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.7.0",
+    "ws": "^8.18.0"
+  }
+}
