@@ -17,7 +17,8 @@ module.exports = (db, wss, WebSocket) => (ws) => {
     // 向所有连接的客户端广播位置，使用 driverId 而不是 userId
     wss.clients.forEach((client) => {
       if (client.readyState === WebSocket.OPEN) {
-        client.send(JSON.stringify({ driverId, latitude, longitude, timestamp }));
+       //client.send(JSON.stringify({ driverId, latitude, longitude, timestamp }));
+        client.send(JSON.stringify({ latitude, longitude }));
       }
     });
   });
